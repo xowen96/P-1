@@ -1,0 +1,36 @@
+#header{
+  position: relative;
+  background-color: #045D8B;
+  text-align: center;
+  padding: 55px;
+  margin:0px;
+  font-family: Roboto;
+  
+}
+
+#root{
+  text-align: center;
+  
+  padding:30px;
+  border-style: solid ;
+  border-color: #045D8B;
+  margin-top: 10px;
+ 
+}
+
+a, a:link, a:visited{
+  text-decoration-line: none;
+  color: black;
+  padding:10px;
+  font-family: Roboto;
+}
+
+#login{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+  text-align: right;
+  padding: 5px;
+
+}

@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <link rel="stylesheet" href="style1.css">
+<html lang="en">
+  <link rel="stylesheet" href="css_file/style1.css">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AJou Board</title>
+  <title>Ajou News</title>
 </head>
 
-<header class="header" id="iHeader"><a href="메인링크">Ajou News</a>
-  <nav> 
-    <ul>
-      <li><a href="자유게시판">자유게시판</a></li>
-      <li><a href="비밀게시판">비밀게시판</a></li>
-      <li><a href="정보게시판">정보게시판</a></li>
-      <li><a href="홍보게시판">홍보게시판</a></li>
-      <li><a href="SW게시판">SW게시판</a></li>
-    </ul>
-  </nav>
-</header>
+    <header id="header">
+      <a  href="/" onclick="route()">Ajou Memo</a>
+    </header>
 
-<div class="button">
-  <button onclick="movePage();" id="newPage">등록하기</button> 
-</div>
-
+   
 <body>
-  <div class="notice1"> 공지 1 </div>
-  <div class="notice2"> 공지 2 </div>
-  <div class="notice3"> 공지 3 </div>
-  <div class="notice4"> 공지 4 </div>
+
+  <form action="" id="login">
+    <p>
+    ID<input type="text" placeholder="ID 입력하세요" name="userId"/>
+    </p>
+
+    <p>
+    PW<input type="password" placeholder="PW 입력하세요" name="userPw"/>
+    </p>
+
+    <div>
+    <input type="button" onclick="check(this.form)" value="Login">
+    <input type="reset" value="Cancel"/>
+    </div> 
+    
+  </form>
+
+
+  <div id="root">
+    <nav id="main-nav" class="sidebar">
+      <a href="/allBoard" onclick="route()">자유게시판</a>
+      <a href="/secret" onclick="route()">비밀게시판</a>
+      <a href="/info"onclick="route()">정보게시판</a>
+      <a href="/advt"onclick="route()">홍보게시판</a>
+      <a href="/SW"onclick="route()">SW게시판</a>
+    </nav>
+    
+    
+    <div id="mainPage"></div>
   
-
-
-
-
-  
+    <script src="js_files/login.js"></script>
+    <script src="/js_files/router.js"></script>
+    
 </body>
 
-<script type="text/javascript" src="movebutton.js"></script>
 </html>
