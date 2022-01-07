@@ -6,46 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajou News</title>
-</head>
 
-    <header id="header">
-      <a  href="/" onclick="route()">Ajou Memo</a>
-    </header>
+  </head>
+
+      <header id="header">
+        <a  href="/" onclick="route()">Ajou Memo</a>
+  </header>
 
    
 <body>
 
-  <form action="" id="login">
-    <p>
-    ID<input type="text" placeholder="ID 입력하세요" name="userId"/>
-    </p>
+    <form action="" id="login">
+      <p>ID<input type="text" placeholder="ID 입력하세요" name="userId"/></p>
+      <p>PW<input type="password" placeholder="PW 입력하세요" name="userPw"/></p>
+      <input type="button" onclick="check(this.form)" value="Login">
+      <input type="reset" value="Cancel"/>  
+    </form>
 
-    <p>
-    PW<input type="password" placeholder="PW 입력하세요" name="userPw"/>
-    </p>
-
-    <div>
-    <input type="button" onclick="check(this.form)" value="Login">
-    <input type="reset" value="Cancel"/>
-    </div> 
-    
-  </form>
+    <input placeholder="이동하려는 게시판을 선택하세요">
 
 
-  <div id="root">
-    <nav id="main-nav" class="sidebar">
-      <a href="/allBoard" onclick="route()">자유게시판</a>
-      <a href="/secret" onclick="route()">비밀게시판</a>
-      <a href="/info"onclick="route()">정보게시판</a>
-      <a href="/advt"onclick="route()">홍보게시판</a>
-      <a href="/SW"onclick="route()">SW게시판</a>
-    </nav>
-    
-    
+      <nav>
+        <ul id="main-menu" onclick="sideMenu()">
+          <li><a href="#">=</a>
+            <ul id="sub-menu">
+              <li><a href="/allBoard" onclick="route()">자유게시판</a></li> 
+              <li><a href="/secret" onclick="route()">비밀게시판</a></li>
+              <li><a href="/info"onclick="route()">정보게시판</a></li>
+              <li><a href="/advt"onclick="route()">홍보게시판</a></li> 
+              <li><a href="/SW"onclick="route()">SW게시판</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+       
     <div id="mainPage"></div>
   
     <script src="js_files/login.js"></script>
     <script src="/js_files/router.js"></script>
+    <script src="/js_files/sidebar.js"></script>
     
 </body>
 
