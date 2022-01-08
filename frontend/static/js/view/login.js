@@ -1,20 +1,25 @@
-const loginButton = document.querySelector(".header_login_text");
+import Abstractview from "./Abstractview.js";
 
-function loingPage (){
-  if(loginButton.value ==="xowen96")
-  {
-    if(loginButton.value ==="1234")
-    {
-      window.open("index.html")
-    }
-  
-  else
-  {
-    alert("패스워드를 잘 못 입력 하셨습니다.");
+export default class extends Abstractview{
+  constructor(){
+    super();
+    this.setTitle("Log In")
   }
-}
-  else
-  {
-    alert("아이디를 잘 못 입력 하셨습니다.");
-  }
-}
+        async getHtml (){
+          return `
+            <div class = "login_body">
+            <div class = "ID_content">
+              ID를 입력하시오.
+            </div>
+
+            <div class = "sign">
+              <a href = "./signup" class = "signup">
+                회원가입
+              </a>
+              <a href = "" class = "signin">
+                로그인
+              </a>
+            </div>
+          `;
+        }
+      }

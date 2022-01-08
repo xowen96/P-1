@@ -64,7 +64,7 @@ flex-direction: column; /* 글 여러 줄이 쌓이는 방향대로 */
 font-size: 14px;
 }
 
-.board-list.active{
+.active{
   display:flex;
 }
 
@@ -252,3 +252,5 @@ font-size: 14px;
   cursor: pointer;
   padding:0px;
 }
+
+

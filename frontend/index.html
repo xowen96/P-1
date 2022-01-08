@@ -9,8 +9,8 @@
   <title>Ajou Memo - 김오왼</title>
   <link rel="stylesheet" href="./static/css/index.css">
   <!--style css 연결-->
-  <script type="module" src=""></script>
-  <script src="./static/js/view/button.js" defer></script>
+  <script type="module" src="./static/js/view/index.js"></script>
+  <script src="./static/js/view/button.js"defer ></script>
   <!--button 활성화 js-->
   <script src="./static/js/view/login.js"></script>
   <!---login 활성화-->
@@ -21,8 +21,8 @@
 <body>
   <!----------------------버튼 클릭시 게시판 창 열기 --------------------->
     <nav class="header">
-      <a href="/menu">
-        <img class="header_toggleButton" src="./static/img/button1.png" />
+      <a href="/menu" class="navbar_toggleBtn" >
+        <img class="header_toggleButton" src="./static/img/button1.png"/>
       </a>
   <!------------------------------메인페이지-------------------------->
       <div class="header_logo_text">
@@ -31,21 +31,22 @@
       </div>
 <!-------------------------로그인기능 구현 -------------------------->
       <div class="header_login_text">
-        <a href="/login" class="login" data-link>로그인</a>
+        <a href="/login" class="login" data-link>Log In</a>
       </div>
     </nav>
 
+    <div id="app"></div>
 
 <!----------------------리스트안 게시판 ------------------------------->
 
     <nav class="board-menu">
       <ul class="board-list">
         
-         <li><a href="/main" class="board_link" data-link>자유게시판</a></li>
-         <li><a href="/secret" class="board_link" data-link>비밀게시판</a></li>
-         <li><a href="/info" class="board_link" data-link>정보게시판</a></li>
-         <li><a href="/promo" class="board_link" data-link>홍보게시판</a></li>
-         <li><a href="/software" class="board_link" data-link>SW게시판</a></li>
+         <li><a href="/main" class="board_link" >자유게시판</a></li>
+         <li><a href="/secret" class="board_link" >비밀게시판</a></li>
+         <li><a href="/info" class="board_link" >정보게시판</a></li>
+         <li><a href="/promo" class="board_link" >홍보게시판</a></li>
+         <li><a href="/software" class="board_link">SW게시판</a></li>
          <!--(li>a)*5입력후 tab 5번 그대로나옴-->
     
       </ul>
