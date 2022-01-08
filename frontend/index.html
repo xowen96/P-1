@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Owen Kim">
+
+  <title>Ajou Memo - 김오왼</title>
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!--style css 연결-->
+  <script type="module" src="./static/js/view/index.js"></script>
+  <script src="./static/js/view/button.js"defer ></script>
+  <!--button 활성화 js-->
+  <script src="./static/js/view/login.js"></script>
+  <!---login 활성화-->
+
+
+</head>
+
+<body>
+  <!----------------------버튼 클릭시 게시판 창 열기 --------------------->
+    <nav class="header">
+      <a href="/menu" class="navbar_toggleBtn" >
+        <img class="header_toggleButton" src="./static/img/button1.png"/>
+      </a>
+  <!------------------------------메인페이지-------------------------->
+      <div class="header_logo_text">
+        <a href="/" class="ajou_memo" data-link>AJOU MEMO</a>
+        <!--데이터 링크를 해줘야 라우트 기능 구현 가능-->
+      </div>
+<!-------------------------로그인기능 구현 -------------------------->
+      <div class="header_login_text">
+        <a href="/login" class="login" data-link>Log In</a>
+      </div>
+    </nav>
+
+    <div id="app"></div>
+
+<!----------------------리스트안 게시판 ------------------------------->
+
+    <nav class="board-menu">
+      <ul class="board-list">
+        
+         <li><a href="/main" class="board_link" >자유게시판</a></li>
+         <li><a href="/secret" class="board_link" >비밀게시판</a></li>
+         <li><a href="/info" class="board_link" >정보게시판</a></li>
+         <li><a href="/promo" class="board_link" >홍보게시판</a></li>
+         <li><a href="/software" class="board_link">SW게시판</a></li>
+         <!--(li>a)*5입력후 tab 5번 그대로나옴-->
+    
+      </ul>
+    </nav>
+
+
+    
+
+    </nav>
+    
+<!----------------------- 테이블 공지사항  --------------------->
+<table class="tableList mainPage" >
+  <thead></thead>
+  <tbody>
+    <tr>
+      <td class="tableListText tableListTextClick" >12/18</td>
+      <td class="tableListText tableListTextClick" >아주 비기너 참여하시는 모든 여러분...</td>
+      <td class="tableListText tableListTextClick" >김오왼</td>
+    </tr>
+    <tr>
+      <td class="tableListText tableListTextClick" >12/18</td>
+      <td class="tableListText tableListTextClick" >아주 비기너 참여하시는 모든 여러분...</td>
+      <td class="tableListText tableListTextClick" >김오왼</td>
+    </tr>
+    <tr>
+      <td class="tableListText tableListTextClick" >12/18</td>
+      <td class="tableListText tableListTextClick" >아주 비기너 참여하시는 모든 여러분...</td>
+      <td class="tableListText tableListTextClick" >김오왼</td>
+    </tr>
+    <tr>
+      <td class="tableListText tableListTextClick" >12/18</td>
+      <td class="tableListText tableListTextClick" >아주 비기너 참여하시는 모든 여러분...</td>
+      <td class="tableListText tableListTextClick" >김오왼</td>
+    </tr>
+    <tr>
+      <td class="tableListText tableListTextClick" style="border-bottom: none;">12/18</td>
+      <td class="tableListText tableListTextClick" style="border-bottom: none;">아주 비기너 참여하시는 모든 여러분...</td>
+      <td class="tableListText tableListTextClick" style="border-bottom: none;">김오왼</td >
+    </tr>
+  </tbody>
+</table>
+
+<div class="freeBoard mainPage">자유게시판</div>
+<div id="jsUpload" class="upload mainPage">등록하기</div>
+<div class="pageButton1">1</div>
+<div class="pageButton2">2</div>
+<div class="pageButton3">3</div>
+<div class="pageButton4">4</div>
+<div class="pageButton5">5</div>
+<div class="pageButton6">6</div>
+<div class="pageButton7">7</div>
+<div class="pageButton8">8</div>
+<div class="pageButton9">9</div>
+
+
+
+
+
+  
+</body>
+</html>
