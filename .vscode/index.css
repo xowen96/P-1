@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  position:relative;
+  display:inline-block; /*이부분 오류가능성 flex */
+  justify-content: space-between;
+  align-items: center; /*header div 수직 중앙맞춤 */
+  width:100%;
+  height: 60px;
+  padding: 20px 20px;
+  background:#045D8B;
+  text-align: center;
+  color: white;
+}
+
+.loginKey{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.loginPage{
+  text-align: center;
+  padding: 20px 0px;
+}
+.sign{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.loginButton{
+  text-align: center;
+}
