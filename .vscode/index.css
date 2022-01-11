@@ -17,20 +17,83 @@
   color: white;
 }
 
-.loginKey{
+#loginKey {
   text-align: center;
-  padding: 20px 0px;
+  padding:60px 0px;
+  right: 340px;
+  margin: 20px;
 }
 
-.loginPage{
+.id .pw{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+#loginPage {
   text-align: center;
   padding: 20px 0px;
 }
-.sign{
+#sign {
   text-align: center;
+  right: 80px;
   padding: 20px 0px;
 }
 
 .loginButton{
   text-align: center;
 }
+div:nth-child(2){
+  display: none;
+  position: absolute;
+  display: inline-block;
+  right: 40px;
+  padding: 20px;
+  color: white;
+  
+  
+}
+
+.board-list.active{
+  display: flex;
+}
+
+div:nth-child(3){
+  position: absolute;
+  display: inline-block;
+  left: 40px;
+  padding: 20px;
+  color: white;
+  
+}
+
+.tableList  {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  left:275.5px;
+  top: 150px;
+  bottom: 150px;
+  align-items: center;
+  border: 1px solid #045D8B;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  
+}
+
+.tableList .tableListText{
+  border-bottom: 1px solid #045D8B;
+  text-align: center;
+}
+
+.tableList .tableListTextClick{
+  cursor: pointer;
+}
+
+
+
+
