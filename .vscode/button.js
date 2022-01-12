@@ -1,7 +1,6 @@
-
-
 import renderLogin from "./login.js";
 import renderMenu from "./menu.js";
+import tableMain from "./table.js";
 
 const $ =document;
 
@@ -22,6 +21,9 @@ function moveToTitle(root,title){
       break;
     case "메뉴":
       renderMenu(root);
+      break;
+    case "게시글":
+      tableMain(root);
       break;
     
   }

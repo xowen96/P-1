@@ -17,10 +17,8 @@ export default function renderMenu(root){
      <li><a href="/software" class="board_link">SW게시판</a></li>
      
      <!--(li>a)*5입력후 tab 5번 그대로나옴-->
-
   </ul>
 </nav>
-
    `
  
   

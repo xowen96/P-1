@@ -1,7 +1,9 @@
 export default function tableMain (root){
+
   root.innerHTML = 
-  `
-  <table class="tableList mainPage" >
+ `
+
+  <table class="tableList" >
   <thead></thead>
   <tbody>
     <tr>

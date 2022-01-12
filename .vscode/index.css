@@ -20,7 +20,7 @@
 #loginKey {
   text-align: center;
   padding:60px 0px;
-  right: 340px;
+  right: 400px;
   margin: 20px;
 }
 
@@ -93,7 +93,3 @@ div:nth-child(3){
 .tableList .tableListTextClick{
   cursor: pointer;
 }
-
-
-
-
